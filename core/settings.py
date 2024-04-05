@@ -30,7 +30,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'django-extensions',
+    'django_extensions',
+    ' import_export',
 
     #APP
     'library',
@@ -75,15 +76,11 @@ DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.postgresql",
         "NAME": os.getenv("NAME"),
-        #"NAME": "mydatabase",
         "USER": os.getenv("USER"),
-        #"USER": "mydatabaseuser",
         "PASSWORD": os.getenv("PASSWORD"),
-        #"PASSWORD": "mypassword",
         "HOST": os.getenv("HOST"),
-        #"HOST": "127.0.0.1",
         "PORT": os.getenv("PORT"),
-        #"PORT": "5432",
+
     }
 }
 
