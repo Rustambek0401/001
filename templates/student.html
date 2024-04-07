@@ -5,6 +5,19 @@
     <title>Title</title>
 </head>
 <body>
-    <h1>SALOM student </h1>
+        <h1>SALOM LIBRARY</h1>
+        <h2>Talabalar: </h2>
+        <ul>
+            {% for talaba in talabalar %}
+            <li>
+                <h2>
+                <a href="">{{talaba.first_name}} {{talaba.last_name}}</a>
+                </h2>
+            </li>
+        {% endfor %}
+        </ul>
+
+    <a href="{% url 'LendingView' %}"> Back</a>
+
 </body>
 </html>

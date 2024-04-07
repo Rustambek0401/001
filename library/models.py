@@ -2,7 +2,7 @@ from django.db import models
 from student.models import Student
 
 class Author(models.Model):
-    firt_name = models.CharField(max_length=20)
+    first_name = models.CharField(max_length=20)
     last_name = models.CharField(max_length=20)
     birth_date = models.DateField(auto_now_add=True)
 
